@@ -21,7 +21,7 @@
 
   <div class="card shadow">
     <div class="card-body">
-      <form action="{{ route('travel-pakage.update', $item->id) }}" method="POST">
+      <form action="{{ route('travel-package.update', $item->id) }}" method="POST">
         @csrf
         @method('PUT')
         <div class="form-group">

@@ -21,7 +21,7 @@
 
   <div class="card shadow">
     <div class="card-body">
-      <form action="{{ route('travel-pakage.store') }}" method="POST">
+      <form action="{{ route('travel-package.store') }}" method="POST">
         @csrf
         <div class="form-group">
           <label for="title">Title</label>

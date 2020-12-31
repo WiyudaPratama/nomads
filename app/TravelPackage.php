@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class TravelPakage extends Model
+class TravelPackage extends Model
 {
     use SoftDeletes;
 
@@ -17,4 +17,9 @@ class TravelPakage extends Model
     protected $hidden = [
 
     ];
+
+    public function galleries()
+    {
+        return $this->hasMany(Gallery::class, 'travel_packages_id', 'id');
+    }
 }
